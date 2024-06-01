@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    background: linear-gradient(16deg, rgba(24, 25, 38, 1) 0%, rgba(9, 10, 10, 1) 100%);
+    background: rgb(21,0,36);
+    background: linear-gradient(194deg, rgba(21,0,36,1) 0%, rgba(36,1,1,1) 50%, rgba(43,25,0,1) 100%); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.App {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.App .AccountForm input, .searchBox input{
+    padding: 15px;
+    display: block;
+    width: 400px;
+    margin: 25px auto;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: white;
+    font-size: 20px;
+}
+.searchBox input{
+    display: inline;
+}
+
+.App .AccountForm {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 10vh;
+    color: white;
+}
+
+.AccountForm .FormButton {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: rgb(255,79,0);
+    background: linear-gradient(16deg, rgba(255,79,0,1) 0%, rgba(255,0,153,1) 100%); 
+    font-size: 25px;
+    width: 200px;
+    line-height: 50px;
+    cursor: pointer;
+    transition:1s ;
+}
+.AccountForm .FormButtonInvalid {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: rgb(172,151,146);
+    background: linear-gradient(16deg, rgba(172,151,146,1) 0%, rgba(182,172,180,1) 100%); 
+    font-size: 25px;
+    width: 200px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.AccountForm .FormButton:hover{
+    background: rgb(157,1,134);
+    background: linear-gradient(16deg, rgba(157,1,134,1) 0%, rgba(0,21,185,1) 100%); 
+}
+.AccountForm .FormButtonInvalid:hover{
+    cursor: not-allowed;
+}
+.AccountForm h2, .AccountForm p{
+    padding: 15px; 
+}
+.titleHeader{
+    font-size:45px;
+    padding:15px;
+text-shadow: 
+                0 0 5px #0ff, /* Cyan */
+                0 0 10px #0ff, 
+                0 0 20px #0ff, 
+                0 0 40px #0ff, 
+                0 0 80px #0ff, 
+                0 0 90px #0ff, 
+                0 0 100px #0ff, 
+                0 0 150px #0ff; /* Intense cyan glow */
+}
+
+.error {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    color: rgba(255, 70, 70, 1);
+}
+.link{
+    text-decoration: none;
+    color: orange;
+}
+.MoviePage{
+    color:white;
+    padding: 10px;
+    margin:10px;
+}
+.MoviePage .header{
+    width:100%;
+    font-size:13px;
+    text-align: center; 
+}
+.expandedMovieList{
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:90%;
+    height:fit-content;
+    padding:15px;
+}
+.movieTexts{
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+    height:100%;
+}
+.movieTexts p{
+    align-self:flex-end;
+    font-size:15px;
+    text-wrap: wrap;
+    width:100%;
+}
+.movieTexts *{
+    padding: 3px;
+}
+a{
+    text-decoration: none;
+    color:#78E3F9;
+}
+.expandedMovieBox{
+    display:flex;
+    flexi-direction:row;
+    justify-content: center;
+    width:600px;
+    height:270px;
+    padding:15px;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 0px 0px 5px 1px #A4F1FF;
+    margin: 20px;
+    transition:.1s;
+}
+.expandedMovieBox:Hover{
+    background-color: rgba(0,0,0,.6);
+    box-shadow: 0px 0px 15px 5px #A4F1FF;
+    transform:scale(1.01);
+}
+.moviePoster{
+    width:180px;
+    height:240px;
+}
+.expandedMovieTitle{
+    
+}
+.movieList{
+    width:80%;
+    margin:auto;
+}
+.movieTable{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+.movieTableRow{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.movieTableRow td{
+    text-align: left;
+    border:1px solid orange;
+    padding:5px;
+}
+.movieName, .movieAuthor{
+    width:30%;
+}
+.movieRating, .movieRelease, .About{
+    width:13%;
+}
+.sortButton {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background: red;
+    font-size: 15px;
+    width: 180px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 
+                0 0 5px red, 
+                0 0 10px red, 
+                0 0 20px red, 
+                0 0 150px red; 
+
+    transition:1s ;
+}
+.sortButton.active {
+  background-color: rgb(0,215,0);
+  box-shadow: 
+                0 0 5px rgb(0,215,0), 
+                0 0 10px rgb(0,215,0), 
+                0 0 20px rgb(0,215,0), 
+                0 0 150px rgb(0,215,0); 
+  color: #fff;
+  border-color: #007bff;
+}
